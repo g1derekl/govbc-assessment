@@ -46,7 +46,7 @@ Since the Winter Supplement app does not seem to send messages to the MQTT broke
 
 ## Customization
 
-To write custom conditions or to use this rule engine in your project with an entirely new set of conditions, follow these steps:
+To write custom conditions or to use this rule engine in your own project with an entirely new set of conditions, follow these steps:
 
 #### Create rule conditions
 
