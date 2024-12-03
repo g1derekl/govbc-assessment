@@ -12,7 +12,9 @@ appear to publish to the `BRE/calculateWinterSupplementInput/<MQTT topic ID>` to
 listen to the response at `BRE/calculateWinterSupplementOutput/<MQTT topic ID>` to capture the
 output from the rule engine.
 
-## Setup
+## Usage
+
+#### Setup
 
 - Prerequisites:
   - Python 3.10 or newer
@@ -28,15 +30,15 @@ output from the rule engine.
   - Set the environment variables `MQTT_SERVER`, `MQTT_PORT` and `MQTT_TOPIC` in a `.env` file at the root of this project. See `main.py` for example values.
   - Note that the value of `MQTT_TOPIC` is taken from the "MQTT Topic ID" field of the Winter Supplement app, and changes each time the app page is refreshed.
 
-## Unit Tests
+#### Unit Tests
 
 Tests are contained in the `tests` folder. To run, simply enter `pytest` in the root directory of this project.
 
-## Run the MQTT service to receive inputs and send outputs
+#### Run the MQTT service to receive inputs and send outputs
 
 Simply run `python main.py` to start the MQTT service.
 
-## Send input and capture output
+#### Send input and capture output
 
 Since the Winter Supplement app does not seem to send messages to the MQTT broker, we can do that ourselves in the shell to test the rule engine.
   - With the MQTT service running, set up a listener to subscribe to the output topic:
